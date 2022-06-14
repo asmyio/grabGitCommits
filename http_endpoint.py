@@ -13,6 +13,7 @@ def write_it(repo_owner, repo_name, db_host, db_port):
     db_port = int(db_port)
     endpoint_trigger(repo_owner, repo_name, db_host, db_port)
     data = read_from_mongodb(repo_owner, repo_name, db_host, db_port)
-    return data
+    headers = {'Content-Type': 'application/json; charset=utf-8'}
+    return data, headers
 
 app.run()
