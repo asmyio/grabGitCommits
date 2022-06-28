@@ -7,7 +7,11 @@ This script reads any GitHub public commits and write to a database.
     2. Returns progress and results (interesting comments/sorted comments).
     3. Save the returned results to a database (MongoDB)
 """
-import json, os, requests, sys, datetime
+import json, 
+import os, 
+import requests, 
+import sys, 
+import datetime
 from pymongo import MongoClient
 from bson.json_util import dumps
 
